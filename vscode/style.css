@@ -1,0 +1,144 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:Arial;
+    border:border-box;
+}
+.navbar{
+    height: 8.5dvh;
+    background-color: #dec171;
+    color:whitesmoke;
+    display:flex;
+    align-items: center;
+}
+
+
+.nav-logo{
+    height: 3.45rem;
+    width: 50%;
+}
+.logo{
+    background-image: url("logo.png");
+    height: 3.35rem;
+    width: 6.25rem;
+    background-size: cover;
+}
+
+.border{
+    border:0.125rem solid transparent;
+    border-radius: 1.5rem;
+}
+.border:hover{
+    border:0.125rem solid white;
+
+}
+
+
+.content{
+    height: 3.45rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contentbox{
+    height: 3rem;
+    display:flex;
+    align-items: center;
+}
+a.nav-a{
+    text-decoration: none;
+    color: white;
+    padding:0.135rem 1.5rem;
+    border:0.125rem solid transparent;
+    border-radius: 1.5rem;
+    font-weight: 550;
+}
+a.nav-a:hover{
+    border:0.125rem solid white;
+    background-color: white;
+    color:#dec171;
+    font-weight: 600;
+}
+
+
+/* main body*/
+
+
+.main-content{
+    height:91.5dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-content{
+    height:100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.h1-1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+}
+.span-1{
+    color: #e2bb4e;
+}
+.h1-2{
+    font-size:2.5rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+.span-2{
+    color: #e2bb4e;
+    font-weight: 800;
+    font-size:2.5rem;
+}
+.p-1{
+    margin-bottom: 1rem;
+}
+.more-button{
+    margin-bottom:4rem;
+    margin-left: 14rem;
+    height:2rem;
+    width:6rem;
+    border-radius: 1rem;
+    background-color:#e2bb4e;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border:none;
+}
+.more-button:hover{
+    background-color:#d3ae48;
+    cursor:pointer;
+}
+
+
+
+.image-content{
+    height:100%;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.image-content::before{
+    content:'';
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:150%;
+    height:150%;
+    background-color:#21c7cf;
+    border-radius:50%;
+    transform:translate(50%,50%);
+    z-index:-1;
+    box-shadow:0px 10px 800px rgba(0,0,0,0);
+}
+.image-content img{
+    height:34rem;
+    transform: rotate(-12deg);
+}
+
